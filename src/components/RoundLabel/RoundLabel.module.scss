@@ -1,0 +1,39 @@
+@import '../../assets//shared_sass/colors_and_constants.scss';
+@import '../../assets/shared_sass/gird.scss';
+
+.RoundLabel {
+    font-size: 14px;
+    padding: 4px 11px;
+    background: $bluen;
+    border-radius: 50px;
+    letter-spacing: 0;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+
+    &.Green {
+        background: $green;
+    }
+
+    &.Orange {
+        background: $orange;
+    }
+
+    &.Blue {
+        background: $bluen;
+    }
+
+    &.Full {
+        width: 100%;
+    }
+
+    &.LeftSide {
+        margin-right: 5px;
+    }
+
+    &.RightSide {
+        margin-left: 5px;
+    }
+}

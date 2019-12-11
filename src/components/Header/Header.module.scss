@@ -1,0 +1,144 @@
+@import '../../assets//shared_sass/colors_and_constants.scss';
+@import '../../assets/shared_sass/gird.scss';
+
+.Header {
+    position: relative;
+    min-width: 100px;
+    width: 100%;
+    color: $bluel;
+    margin-bottom: 100px;
+
+    .InnerHader {
+        background: $blued;
+        padding: 60px 0;
+    }
+
+    .Infos {
+        position: relative;
+        text-align: center;
+        margin-left: auto;
+        margin-Right: auto;
+        max-width: 750px;
+    }
+
+    .Title {
+        color: $white;
+        font-size: 30px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    .SubTitle {
+        margin: 0 15px 10px 0;
+        font-size: 16px;
+    }
+
+
+
+    .Txt {
+        color: $bluel;
+        display: inline-block;
+        margin: 0 15px 10px 0;
+
+        img {
+            margin-right: 5px;
+        }
+    }
+
+    .Curve {
+        height: 100px;
+        width: 100%;
+        overflow: hidden;
+        bottom: 0;
+        margin-bottom: -100px;
+        position: relative;
+    }
+
+    .Path {
+        fill: $blued;
+    }
+
+    .BtnDown {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 50px;
+        margin-left: -25px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .Person,
+    .CoffeeTable {
+        position: absolute;
+        z-index: 20;
+        display: none;
+        bottom: -130px;
+    }
+
+    .Person {
+        width: 400px;
+        right: -475px;
+        height: auto;
+    }
+
+    .CoffeeTable {
+        width: 450px;
+        left: -525px;
+        height: auto;
+    }
+
+    @media only screen and (min-width: 768px) {
+
+        .Person,
+        .CoffeeTable {
+            display: inline-block;
+        }
+
+        .BtnDown {
+            margin-top: 1vh;
+        }
+
+        .TxtArea {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .Person {
+            right: -400px;
+        }
+
+        .CoffeeTable {
+            left: -450px;
+        }
+    }
+
+    @media only screen and (min-width: 992px) {
+        .BtnDown {
+            margin-top: 2vh;
+        }
+
+        .Person {
+            right: -475px;
+        }
+
+        .CoffeeTable {
+            left: -525px;
+        }
+    }
+
+    @media only screen and (min-width: 1500px) {
+        .BtnDown {
+            margin-top: 4vh;
+        }
+    }
+}
